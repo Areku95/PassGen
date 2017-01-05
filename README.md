@@ -1,6 +1,8 @@
 #[EN] : PassGen
 Wordlist Generator using key-words, options and recursivity
 
+Script work under python 2.X and python 3.X
+
 PassGen is a Wordlist generator: it take words as input and mix them to make all the possible combinaison at the output. PassGen also take a minimum size and a maximum size for the generated words. 
 
 For example, if the script take "a" "b" and "c" with min size 0 and max size 3 in input, output will be: a, b, c, aa, bb, cc, aaa, bbb, ccc, ab, ac, ba, bc, ca, cb, aab, aac, aba, abb, abc, aca, acb, acc, baa, bab, bac, bba, bbc, bca, bcb, bcc, caa, cab, cac, cba, cbb, cbc... ccb
@@ -54,6 +56,8 @@ And then set manually the wordstart, maxSize...
 
 #[FR] : PassGen
 Générateur de Dictionaires (wordlist) utilisant des mots clés, options et de la recursivité
+
+Le script fonctionne sous python 2.X et python 3.X
 
 PassGen est un générateur de Dictionaires (wordlist): Il prends des mots en entrée et les mélange pour renvoyer en sortie toutes les possibilités de combinaisons et "combo" possibles. PassGen prend également en paramètre une taille minimum et maximum pour les mots générés.
 
