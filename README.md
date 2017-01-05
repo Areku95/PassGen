@@ -3,14 +3,15 @@ Wordlist Generator using key-words, options and recursivity
 
 PassGen is a Wordlist generator: it take words as input and mix them to make all the possible combinaison at the output. PassGen also take a minimum size and a maximum size for the generated words. 
 
+For example, if the script take "a" "b" and "c" with min size 0 and max size 3 in input, output will be: a, b, c, aa, bb, cc, aaa, bbb, ccc, ab, ac, ba, bc, ca, cb, aab, aac, aba, abb, abc, aca, acb, acc, baa, bab, bac, bba, bbc, bca, bcb, bcc, caa, cab, cac, cba, cbb, cbc... ccb
 The script propose also additionals "extra" chars to add at the end of each words for completing the combo. User can define max number of extra-char to add at the end. Words without extra chars will still be generated. 
 It may be usefull when someone add a number or #/@ at the end of his password ;) !.
 
 The scripts may be also usefull for guessing email address : user can define with what does the generated words should start and with what should they finish (prefix / suffix).
 
+The script also propose option to add such as lower-case words, L33T 5P34K words ... (see Words Options)
 
-
-For example, if the script take "a" "b" and "c" with min size 0 and max size 3 in input, output will be: a, b, c, aa, bb, cc, aaa, bbb, ccc, ab, ac, ba, bc, ca, cb, aab, aac, aba, abb, abc, aca, acb, acc, baa, bab, bac, bba, bbc, bca, bcb, bcc, caa, cab, cac, cba, cbb, cbc... ccb
+The script regularly removes duplicated words.
 
 # ARGMOD
 Default script work in command-line ("argument" mode):
@@ -56,33 +57,37 @@ Générateur de Dictionaires (wordlist) utilisant des mots clés, options et de 
 
 PassGen est un générateur de Dictionaires (wordlist): Il prends des mots en entrée et les mélange pour renvoyer en sortie toutes les possibilités de combinaisons et "combo" possibles. PassGen prend également en paramètre une taille minimum et maximum pour les mots générés.
 
+Par exemple, si le script prend "a" "b" et "c" avec comme min size 0 et max size 3 en entrée , alors la sortie sera: a, b, c, aa, bb, cc, aaa, bbb, ccc, ab, ac, ba, bc, ca, cb, aab, aac, aba, abb, abc, aca, acb, acc, baa, bab, bac, bba, bbc, bca, bcb, bcc, caa, cab, cac, cba, cbb, cbc... ccb
+
 Le script propose également d'ajouter des caractères supplémentaires en fin de mots. L'utilisateur peut définir le nombre maximum de caractère à ajouter.Les mots sans caractères supplémentaires seront bien entendu présent dans la sortie. 
 Cela peut être utile quand quelqun ajoute un #/@ à la fi de son mot de passe ;) !.
 
 Le script peut être également utile pour deviner de addresses mails: l'utilisateur peut définir par quoi doivent commencer et finir les mots générés (préfix / suffix).
 
+Le script propose également des options comme ajouter les mots en minuscules, les mots en L33T 5P34K ... (voir Options)
 
-Par exemple, si le script prend "a" "b" et "c" avec comme min size 0 et max size 3 en entrée , alors la sortie sera: a, b, c, aa, bb, cc, aaa, bbb, ccc, ab, ac, ba, bc, ca, cb, aab, aac, aba, abb, abc, aca, acb, acc, baa, bab, bac, bba, bbc, bca, bcb, bcc, caa, cab, cac, cba, cbb, cbc... ccb
+Le script supprimé régulièrement les doublons.
+
 
 # ARGMOD
 Par default, le script fonctionne en commande-line (mode "argument"):
 
-        -m : Min Size for the generated words
-        -M : Max Size for the generated words
-        -o : Ouput file
-        -ws : Word Start (each words will start with)
-        -we : Word End (each words will end with)
-        -i : Input file, each line will be add to the start list as a Word
-        -w : Input words, MUST BE THE LAST ARG
+        -m : Taille minimum des mots générés
+        -M : Taille maximum des mots générés
+        -o : Fichier de sortie
+        -ws : Préfixe (chaque mots commenceront par ...)
+        -we : Suffixe (chaque mots finiront par ...)
+        -i : Fichier d'entrée, chaque ligne sera défini comme un mot ajouté à la liste de départ
+        -w : Les mots suivant la balise seront ajoutés aux mots d'entrée, CELA DOIT ETRE LE DERNIER ARGUMENT
 
-      Words Options :
+      Options :
 
-        -ab : add lowercase words
-        -AB : add UPPERCASE words
-        -Ab : add lowercase words with uppercase first letter 
-        -ba : add reverse word in lowercase
-        -Ba : add reverse word in lowercase with uppercase first letter
-        -BA : add reverse word in UPPERCASE
+        -ab : ajoute les mots entrée en minuscule words
+        -AB : ajoute UPPERCASE words
+        -Ab : ajoute lowercase words with uppercase first letter 
+        -ba : ajoute reverse word in lowercase
+        -Ba : ajoute reverse word in lowercase with uppercase first letter
+        -BA : ajoute reverse word in UPPERCASE
         -L337 : add word in L33T 5P34K
 
 
