@@ -82,16 +82,16 @@ Par default, le script fonctionne en commande-line (mode "argument"):
 
       Options :
 
-        -ab : ajoute les mots entrée en minuscule words
-        -AB : ajoute UPPERCASE words
-        -Ab : ajoute lowercase words with uppercase first letter 
-        -ba : ajoute reverse word in lowercase
-        -Ba : ajoute reverse word in lowercase with uppercase first letter
-        -BA : ajoute reverse word in UPPERCASE
-        -L337 : add word in L33T 5P34K
+        -ab : ajoute les mots entrés en minuscule
+        -AB : ajoute les mots entrés en MAJUSCULE
+        -Ab : ajoute les mots entrés en minuscule avec la première lettre en majuscule
+        -ba : ajoute les mots entrés en renversés et en minuscule
+        -Ba : ajoute les most entrés en renversés et en minuscule avec la première lettre en majuscule
+        -BA : ajoute les mots entrés en renversés et en MAJUSCULE
+        -L337 : ajoute les mots entrés en L33T 5P34K
 
 
-Examples :
+Exemples :
 
 
 >python passgen.py -m 5 -M 12 -w foo bar abc zeecka words nice
@@ -104,6 +104,6 @@ Examples :
 
 >python passgen.py -m 5 -M 7 -i inputfile.txt -ab -AB -L337
 
-You can also edit the script by setting ARGMOD to False value: ARGMOD = False
+Vous pouvez égallement éditer le script en passant ARGMOD sur sa valeur False: ARGMOD = False
 
-And then set manually the wordstart, maxSize...
+Pour ensuite définir manuellement le préfix, la taille maximum...
