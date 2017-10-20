@@ -1,4 +1,4 @@
-#[EN] : PassGen
+# [EN] : PassGen
 Wordlist Generator using key-words, options and recursivity
 
 Script work under python 2.X and python 3.X
@@ -54,7 +54,7 @@ You can also edit the script by setting ARGMOD to False value: ARGMOD = False
 
 And then set manually the wordstart, maxSize...
 
-#[FR] : PassGen
+# [FR] : PassGen
 Générateur de Dictionaires (wordlist) utilisant des mots clés, options et de la recursivité
 
 Le script fonctionne sous python 2.X et python 3.X
