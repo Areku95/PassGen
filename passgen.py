@@ -56,9 +56,9 @@ format_BA = False # add reverse upper-case word
 format_ba = False # add reverse lower-case word
 format_Ba = False # add reverse with 1st letter upper-case
 format_L33T_5P34K = False # Add "L33T 5P34K" (leet speak) language
-leet_j = True # J --> 1 for leet speak
+leet_j = True # J --> 1 for leet speak 
 
-# extra_chars = "0123456789.-" # Extra char to Add at the end of the word
+extra_chars = "0123456789.-" # Extra char to Add at the end of the word
 nbExtra_chars = 0 # Number of max extra char
 
 """ Pre set of extra char """
@@ -67,7 +67,7 @@ nbExtra_chars = 0 # Number of max extra char
 #extra_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 #extra_chars = "abcdefghijklmnopqrstuvwxyz"
 #extra_chars = "abcdefghijklmnopqrstuvwxyz0123456789"
-extra_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&'()*+,-./0123456789:;<=>?@[\]^_`{|}~\""
+#extra_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&'()*+,-./0123456789:;<=>?@[\]^_`{|}~\""
 
 maxDisplay = -1 # Max displayed words, put -1 for printing all of them (may take time & memory)
 
@@ -96,7 +96,7 @@ please set ARGMOD to False or use the following command
         -ba : add reverse word in lowercase
         -Ba : add reverse word in lowercase with uppercase first letter
         -BA : add reverse word in UPPERCASE
-        -L33T : add word in L33T 5P34K
+        -L337 : add word in L33T 5P34K
 
 *************************************************************************
 Examples :
@@ -147,7 +147,7 @@ python passgen.py -m 5 -M 7 -i inputfile.txt -ab -AB -L337
 				format_ba = True # add reverse lower-case word
 			if("-Ba" in sys.argv):
 				format_Ba = True # add reverse with 1st letter upper-case
-			if("-L33T" in sys.argv):
+			if("-L337" in sys.argv):
 				format_L33T_5P34K = True # Add "L33T 5P34K" (leet speak) language
 
 		except:
@@ -178,12 +178,12 @@ if(format_Ba):
 	print("     *> Ba format")
 if(format_L33T_5P34K):
 	print("     *> L33T 5P34K format")
-if(not(format_Ab or
-       format_AB or
-       format_ab or
-       format_BA or
-       format_ba or
-       format_Ba or
+if(not(format_Ab or 
+       format_AB or 
+       format_ab or 
+       format_BA or 
+       format_ba or 
+       format_Ba or 
        format_L33T_5P34K)):
 	print("     *> No Option")
 print("")
